@@ -15,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'App\Http\Controllers\CategoryController@index')->name('index_category');
 Route::post('/category/create', 'App\Http\Controllers\CategoryController@create')->name('create_category');
-Route::post('/category/autocomplete', 'App\Http\Controllers\CategoryController@autocompleteSearch')->name('autocompleteSearch');
+Route::post('/category/get', 'App\Http\Controllers\CategoryController@getCategory')->name('getCategory');
